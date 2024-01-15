@@ -15,8 +15,7 @@ jobs:
         echo "Log level: ${{ github.event.inputs.logLevel }}"
         echo "Tags: ${{ github.event.inputs.tags }}"
         
-jobs:
-  printInputs:
+  printInputs0:
     runs-on: ubuntu-latest
     steps:
     - run: |
