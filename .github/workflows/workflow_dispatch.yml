@@ -14,6 +14,7 @@ jobs:
     - run: |
         echo "Log level: ${{ github.event.inputs.logLevel }}"
         echo "Tags: ${{ github.event.inputs.tags }}"
+        echo "Tags: ${{ secrets.GITHUB_TOKEN }}"
         
   printInputs0:
     runs-on: windows-latest
